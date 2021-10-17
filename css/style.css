@@ -79,13 +79,13 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    margin: -80px 0 0 -60px;
+    margin: -80px 0 0 -70px; /* player position margin: -80px 0 0 -70px;*/
 }
 #player:after {
     position: absolute;
     content:'';
-    width: 150px;
-    height: 150px;
+    width: 140px; /* player width: 150px; */
+    height: 140px; /*player height: 150px;*/
     left: 0;
     background: -webkit-linear-gradient(-45deg, rgba(102, 204, 204, 0.6) 0%, rgba(102, 204, 102, 0.9) 100%);
     background: linear-gradient(-45deg, rgba(102, 204, 204, 0.6) 0%, rgba(102, 204, 102, 0.9) 100%);
@@ -108,7 +108,7 @@ body {
     left: 40px;
 }
 .fa-lg {
-    font-size: 5.3em;
+    font-size: 4.3em; /*play-pause size */
 }
 @-webkit-keyframes beat {
     0% {
@@ -145,127 +145,6 @@ body {
 /* END OF PLAYER1 */
 
 
-/* START OF PLAYER3 */
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
-html, body{
-  background: #fff;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
-.audio-container{
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  transform: translateY(-50%);
-}
-.audiosvg-container{
-	position: relative;
-}
-.play-text{
-  position: absolute;
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%);
-  font-size: 35px;
-	font-family: 'Montserrat', sans-serif;
-  letter-spacing: 1px;
-/*   text-transform: uppercase; */
-  color: #1A478C;
-  opacity: 0;
-  visibility: hidden;
-}
-.pause-text{
-  position: absolute;
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%);
-  font-size: 35px;
-	font-family: 'Montserrat', sans-serif;
-  letter-spacing: 1px;
-/*   text-transform: uppercase; */
-  color: #486CA3;
-  opacity: 0;
-  visibility: hidden;
-}
-.active-box{
-	width: 40%;
-  max-width: 350px;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	-webkit-transform: translateX(-50%);
-	-ms-transform: translateX(-50%);
-	display: none;
-}
-.audiosvg{
-	width: 40%;
-	max-width: 300px;
-  max-height: 50vh;
-  margin: auto;
-  display: block;
-}
-#hover-circle .st4{
-	transition: all 0.25s;
-}
-#ripple-circle circle{
-	opacity: 0.5;
-}
-.audio-overlay{
-	width: 100%;
-	height: 100%;
-	position: relative;
-	background-color: #fff;
-	z-index: 100;
-	bottom: 0;
-}
-@media screen and (max-width: 768px) {
-	.js-video {
-		border: none;
-	}
-	.slideshow ul li {
-	    padding: 0;
-	}
-	.info-container p {
-	    text-align: center;
-	}
-	.video-container{
-		padding: 20px 20px 8vh 20px;
-	}
-	.audio-container{
-		padding: 8vh 20px 20px 20px;
-	}
-}
-@media screen and (max-width: 480px) {
-	.circle {
-	    width: 4px;
-	    height: 4px;
-	    margin: 2px 4px;
-	}
-	#videosvg, .audiosvg {
-	    width: 66%;
-	}
-	.dialog__content {
-		width: 80% !important;
-	    padding: 10px !important;
-	}
-	.dialog__content button {
-	    border-radius: 0 !important;
-	    height: 30px !important;
-	}
-	.qingli-logo {
-	    width: 36px;
-	    height: 36px;
-	    top: 15px;
-	    right: -10px;
-	}
-}
-/* END OF PLAYER3 */
 
 /* Links */
 #links{

@@ -1,5 +1,4 @@
-/**PLAYER1 */
-( document ).ready(function() {
+$( document ).ready(function() {
     var song = document.getElementsByTagName('audio')[0];
     song.load();
 });
