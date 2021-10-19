@@ -51,6 +51,7 @@
 	max-width: 250px; /* max-width: 200px; */
 	height: auto;
 	margin-top: 0px;
+	margin-bottom: 10px;
 }
 
 /* Radio */
@@ -92,7 +93,7 @@ body {
 	background: -webkit-linear-gradient(-45deg, rgba(102, 204, 204, 0.6) 0%, rgba(102, 204, 102, 0.9) 100%);
     background: linear-gradient(-45deg, rgba(219, 219, 219, 0.171) 0%, rgba(202, 200, 200, 0.753) 100%);
     border-radius: 25px;
-    box-shadow: 0 0 20px -5px #fff, inset 0 0 10px #fff, inset 0 70px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 20px -5px rgba(255, 255, 255, 0.884), inset 0 0 10px #fff, inset 0 70px rgba(255, 255, 255, 0.2);
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
@@ -153,7 +154,7 @@ body {
 /* Links */
 #links{
 	/*background-color: lawngreen;*/
-	padding-top: 190px; /* button plyer-190, other plyers-40 */
+	padding-top: 150px; /* button plyer-190, other plyers-40 */
 }
 
 /* Icon */
