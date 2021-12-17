@@ -1,0 +1,111 @@
+------------- ON-OFF ---------------
+
+HTML
+====
+<!--This player was designed to autoplay when the page is loaded. You can remove auto play from <audio> element to stop the auto play-->
+			<!-- <audio id="audio-player" autoplay name="audio-player" src="https://www.myinstants.com/media/sounds/initial-d-dancing-queen-mp3cut.mp3"></audio> -->
+			<audio id="audio-player" autoplay name="audio-player"
+				src="https://www.myinstants.com/media/sounds/initial-d-dancing-queen-mp3cut.mp3"></audio>
+			<div class="musicplayer">
+				<!-- <div class="musicicon">
+					<h6>MUSIC PLAYER</h6> 
+				</div> -->
+				<div class="toggle">
+					<div class="on">ON</div>
+					<div class="off">OFF</div>
+					<div class="slide"></div>
+				</div>
+			</div>
+
+
+CSS
+===
+.toggle {
+	background: rgba(0,0,0,0.1);
+	width: 77px;
+	height: 22px;
+	position: relative;
+	-webkit-user-select: none;
+	cursor: pointer;
+	border-radius: 3px;
+	font-size: 13px;
+	font-family: arial;
+	line-height: 22px;
+	font-weight: bold;
+	margin: 0 auto;
+  }
+  .toggle .on, .toggle .off {
+	z-index: 10;
+	position: absolute;
+	top: 0px;
+	height: 24px;
+	width:29px;
+	transition: all 0.2s;
+  }
+  .toggle .off {
+	right: 10px;
+	color: #5e6f6e;
+  }
+  .toggle .on {
+	left: 5px;
+	color:#fff;
+  }
+  .toggle .slide {
+	transition: all 0.2s ease;
+	position: absolute;
+	left: 3px;
+	top: -1px;
+	bottom: 0;
+	background: #6699cc;
+	width: 30px;
+	height: 25px;
+	z-index: 1;
+	border-radius:5px;
+  }
+  .toggle:hover .slide {
+	/*background: #999;*/
+  }
+  .toggle.active .slide {
+	left: 36px;
+  }
+  .toggle.active .on {
+	color:#5e6f6e;
+  }
+  .toggle.active .off {
+	color:#fff;
+  }
+  .musicicon h1{
+	  text-align: center;
+	font-size:16px;
+	font-family:Arial;
+	line-height:18px;
+	color:#e8592a;
+	font-weight:bold;
+  }
+  .musicplayer{
+	  width: 140px;
+	margin: 40px auto 0 auto;
+  }
+
+
+JS
+==
+$(document).ready(function()
+{
+	$(".toggle").click(function()
+    {
+	$(this).toggleClass("active");
+	});
+
+	$(".slide-body").click(function(){
+	$(".slide-body .slide").toggleClass("active");
+	});
+
+  $(".on").click(function(){
+    $("#audio-player")[0].play();
+  });
+
+  $(".off").click(function(){
+    $("#audio-player")[0].pause();
+  });
+});
