@@ -1,158 +1,192 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <!--
 	Aerial by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
- <!-- Basic Page Needs
+  <head>
+    <!-- Basic Page Needs
     ================================================== -->
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>#රේඩියෝශෝවිත්සැන්ඩි</title>
-    <meta name="description" content="#රේඩියෝශෝවිත්සැන්ඩි">
-    <meta name="keywords"
-        content="#රේඩියෝශෝවිත්සැන්ඩි, online radio, radio sri lanka, sri lanka radio, sinhala songs, sinhala radio">
-    <meta name="author" content="pixy404">
+    <meta name="description" content="#රේඩියෝශෝවිත්සැන්ඩි" />
+    <meta
+      name="keywords"
+      content="#රේඩියෝශෝවිත්සැන්ඩි, online radio, radio sri lanka, sri lanka radio, sinhala songs, sinhala radio"
+    />
+    <meta name="author" content="pixy404" />
 
     <!-- Twitter card
     ================================================== -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="#රේඩියෝශෝවිත්සැන්ඩි" />
-    <meta name="twitter:description" content="Your ultimate online radio station" />
-    <meta name="twitter:image" content="https://i.postimg.cc/jj0CSW5Y/blue-logo.png" /> <!-- direct link-->
+    <meta
+      name="twitter:description"
+      content="Your ultimate online radio station"
+    />
+    <meta
+      name="twitter:image"
+      content="https://i.postimg.cc/jj0CSW5Y/blue-logo.png"
+    />
+    <!-- direct link-->
 
     <!-- Favicons
     ================================================== -->
-    <link rel="shortcut icon" sizes="256x256" href="css/images/logo/blue-logo-fav256x256.ico">
-    <link rel="apple-touch-icon" href="css/images/logo/blue-logo-fav57x57.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="css/images/logo/blue-logo-fav72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="css/images/logo/blue-logo-fav144x144.png">
+    <link
+      rel="shortcut icon"
+      sizes="256x256"
+      href="css/images/logo/blue-logo-fav256x256.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="css/images/logo/blue-logo-fav57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="css/images/logo/blue-logo-fav72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="css/images/logo/blue-logo-fav144x144.png"
+    />
+
+    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/init.js"></script>
+	<script src="js/radio.js"></script>
+
+
+    <noscript>
+      <link rel="stylesheet" href="css/skel.css" />
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="css/style-wide.css" />
+      <link rel="stylesheet" href="css/style-noscript.css" />
+    </noscript>
+    <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+  </head>
+
+  <body class="loading">
 
 
 
-		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-		<script src="https://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/init.js"></script>
-		<script src="js/radio.js"></script> <!-- PLAYER2-->
-		
-		<noscript>
-			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-wide.css" />
-			<link rel="stylesheet" href="css/style-noscript.css" />
-			<link rel="stylesheet" href="css/radio.css"> <!-- PLAYER2-->
-		</noscript>
-		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
-	</head>
+    <div id="wrapper">
+      <div id="bg"></div>
+      <div id="overlay"></div>
+      <div id="main">
+        <!-- Header -->
+        <header id="header">
+          <div id="center-div">
+			<div id="upper_border"> </div>
+            <!-- ANIMATION -->
+            <div>
+              <img
+                id="animation"
+                src="css/images/animation/covid/stay safe.gif"
+              />
+            </div>
+            <!-- LOGO -->
+            <img
+              id="logo"
+              src="css/images/logo/logo-small-removebg-nohashtag-small.png"
+              )
+            />
 
-	<body class="loading">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
+			<!-- PLAYER -->
+			<!--This player was designed to autoplay when the page is loaded. You can remove auto play from <audio> element to stop the auto play-->
+			<!-- <audio id="audio-player" autoplay name="audio-player" src="https://www.myinstants.com/media/sounds/initial-d-dancing-queen-mp3cut.mp3"></audio> -->
+			<audio id="audio-player" autoplay name="audio-player"
+				src="https://www.myinstants.com/media/sounds/initial-d-dancing-queen-mp3cut.mp3"></audio>
+			<div class="musicplayer">
+				<!-- <div class="musicicon">
+				</div> -->
+				<div class="toggle">
+					<div class="on">ON</div>
+					<div class="off">OFF</div>
+					<div class="slide"></div>
+				</div>
+			</div>
 
-				<!-- Header -->
-					<header id="header">
-						<!-- <h1>Adam Jensen</h1> -->
-						<!-- LOGO -->
-						<img id="logo" src="css/images/logo/logo-small-removebg-nohashtag-585.png")>
-				
-						<!-- PLAYER -->
-				<div id="radio">	
+            <!-- <div id="radio">
+              <figure>
+                <audio controls src="http://stream.zeno.fm/xgbp8psnzk0uv">
+                  Your browser does not support the
+                  <code>audio</code> element.
+                </audio>
+              </figure>
+            </div> -->
 
-					<!-- START OF PLAYER1 -->
-						<!-- START OF THE RADIO PLAYER EMBEDDING -->
-						<div id="player">
-							<span id="playback" class="fa fa-play fa-lg"></span>
-						</div>
-						<audio>
-							<source id="sourceOgg" type="audio/ogg" />
-							<source id="sourceMp3" type="audio/mpeg" /> 
-						</audio> 
-						<!-- END OF THE RADIO PLAYER EMBEDDING -->
-					<!-- END OF PLAYER1 -->
-
-<!-- START OF PLAYER2 -->
-<!-- BEGINS: AUTO-GENERATED MUSES RADIO PLAYER CODE 
-<script type="text/javascript" src="http://hosted.musesradioplayer.com/mrp.js"></script>
-<script type="text/javascript">
-MRP.insert({
-'url':'http://stream.zeno.fm/xgbp8psnzk0uv',
-'codec':'mp3',
-'volume':45,
-'autoplay':true,
-'buffering':2,
-'title':'Unlimited Music',
-'welcome':'WELCOME TO...',
-'bgcolor':'#FFFFFF',
-'skin':'mcclean',
-'width':180,
-'height':60
-});
-</script> -->
-<!-- ENDS: AUTO-GENERATED MUSES RADIO PLAYER CODE -->
-<!-- END OF PLAYER2 -->
-				</div> 
-
-				<!-- LINKS -->
-				<div id="links">
-						<h6>
-							&nbsp;&bull;&nbsp; 
-							<a href="https://twitter.com/hashtag/%E0%B6%BB%E0%B7%9A%E0%B6%A9%E0%B7%92%E0%B6%BA%E0%B7%9D%E0%B7%81%E0%B7%9D%E0%B7%80%E0%B7%92%E0%B6%AD%E0%B7%8A%E0%B7%83%E0%B7%90%E0%B6%B1%E0%B7%8A%E0%B6%A9%E0%B7%92" target="_blank">#රේඩියෝශෝවිත්සැන්ඩි</a> 
-							&nbsp;&bull;&nbsp; 
-						</h6>
-						<h6>
+            <!-- LINKS -->
+            <div id="links">
+              <h6>
+                &nbsp;&bull;&nbsp;
+                <a
+                  href="https://twitter.com/hashtag/%E0%B6%BB%E0%B7%9A%E0%B6%A9%E0%B7%92%E0%B6%BA%E0%B7%9D%E0%B7%81%E0%B7%9D%E0%B7%80%E0%B7%92%E0%B6%AD%E0%B7%8A%E0%B7%83%E0%B7%90%E0%B6%B1%E0%B7%8A%E0%B6%A9%E0%B7%92"
+                  target="_blank"
+                  >#රේඩියෝශෝවිත්සැන්ඩි</a
+                >
+                &nbsp;&bull;&nbsp;
+              </h6>
+              <!--<h6>
 							&nbsp;&bull;&nbsp; 
 							<a rel="nofollow" href="https://twitter.com/search?q=%23WednesdayRockEveWithSandy&src=hashtag_click" target="_blank">#WednesdayRockEveWithSandy</a>
 							&nbsp;&bull;&nbsp; 
-						</h6>
-				</div>
+						</h6>-->
+            </div>
 
-				<!-- ICONS -->
-						<nav>
-							<ul>
-								<li>
-									<a href="https://twitter.com/hashtag/%E0%B6%BB%E0%B7%9A%E0%B6%A9%E0%B7%92%E0%B6%BA%E0%B7%9D%E0%B7%81%E0%B7%9D%E0%B7%80%E0%B7%92%E0%B6%AD%E0%B7%8A%E0%B7%83%E0%B7%90%E0%B6%B1%E0%B7%8A%E0%B6%A9%E0%B7%92"
-									target="_blank" class="icon fa-twitter">
-									<span class="label">Twitter</span></a>
-								</li>
-								<!-- <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+            <!-- ICONS -->
+            <nav>
+              <ul>
+                <li>
+                  <a
+                    href="https://twitter.com/hashtag/%E0%B6%BB%E0%B7%9A%E0%B6%A9%E0%B7%92%E0%B6%BA%E0%B7%9D%E0%B7%81%E0%B7%9D%E0%B7%80%E0%B7%92%E0%B6%AD%E0%B7%8A%E0%B7%83%E0%B7%90%E0%B6%B1%E0%B7%8A%E0%B6%A9%E0%B7%92"
+                    target="_blank"
+                    class="icon fa-twitter"
+                  >
+                    <span class="label">Twitter</span></a
+                  >
+                </li>
+                <!-- <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
 								<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
 								<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li> 
 								<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li> -->
-							</ul>
-						</nav>
-						
-				<!-- News Ticker -->
-				  <div class="tcontainer">
-					<div class="ticker-wrap">
-						<div class="ticker-move">
-							<div class="ticker-item">Get vaccinated</div>
-							<div class="ticker-item">Stay safe</div>
-							<div class="ticker-item">Get vaccinated</div>
-							<div class="ticker-item">Stay safe</div>
-							<div class="ticker-item">Get vaccinated</div>
-							<div class="ticker-item">Stay safe</div>
-							<div class="ticker-item">Get vaccinated</div>
-							<div class="ticker-item">Stay safe</div>
-							<div class="ticker-item">Get vaccinated</div>
-						</div>
-					</div>
-				</div>
-					</header>
-					
-				<!-- Footer -->
-					<footer id="footer">
-						<span class="copyright">&copy; Copyright 2021 #රේඩියෝශෝවිත්සැන්ඩි.</span>
-					</footer>
-				
-			</div>
-		</div>
-	</body>
+              </ul>
+            </nav>
+          </div>
+          <!-- News Ticker -->
+          <div id="news-ticker">
+            <div class="tcontainer">
+              <div class="ticker-wrap">
+                <div class="ticker-move">
+                  <div class="ticker-item">Get vaccinated</div>
+                  <div class="ticker-item">Stay safe</div>
+                  <div class="ticker-item">Get vaccinated</div>
+                  <div class="ticker-item">Stay safe</div>
+                  <div class="ticker-item">Get vaccinated</div>
+                  <div class="ticker-item">Stay safe</div>
+                  <div class="ticker-item">Get vaccinated</div>
+                  <div class="ticker-item">Stay safe</div>
+                  <div class="ticker-item">Get vaccinated</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- Footer -->
+        <footer id="footer">
+          <span class="copyright"
+            >&copy; Copyright 2021 #රේඩියෝශෝවිත්සැන්ඩි.</span
+          >
+        </footer>
+      </div>
+    </div>
+  </body>
 </html>
